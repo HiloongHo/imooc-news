@@ -60,7 +60,7 @@ if (uni.restoreGlobal) {
     created() {
       const info = uni.getSystemInfoSync();
       this.statusBarHeight = info.statusBarHeight;
-      formatAppLog("log", "at components/navbar/navbar.vue:32", info);
+      formatAppLog("log", "at components/navbar/navbar.vue:34", info);
       this.windowWidth = info.windowWidth;
     }
   };
@@ -86,7 +86,9 @@ if (uni.restoreGlobal) {
           },
           [
             vue.createElementVNode("view", { class: "navbar-search" }, [
-              vue.createElementVNode("view", { class: "navbar-search_icon" }),
+              vue.createElementVNode("view", { class: "navbar-search_icon" }, [
+                vue.createElementVNode("text", { class: "iconfont icon-search" })
+              ]),
               vue.createElementVNode("view", { class: "navbar-search_text" }, "uni-app\\ vue")
             ])
           ],

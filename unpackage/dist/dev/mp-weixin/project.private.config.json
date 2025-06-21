@@ -1,5 +1,5 @@
 {
   "setting": {
-    "compileHotReLoad": false
+    "compileHotReLoad": true
   }
 }

@@ -6,7 +6,9 @@
 			<!-- 导航栏内容 -->
 			<view class="navbar-content" :style="{height: navBarHeight + 'px', width: windowWidth + 'px'}">
 				<view class="navbar-search">
-					<view class="navbar-search_icon"></view>
+					<view class="navbar-search_icon">
+						<text class="iconfont icon-search"></text>
+					</view>
 					<view class="navbar-search_text">uni-app\ vue</view>
 				</view>
 			</view>
@@ -46,6 +48,7 @@
 </script>
 
 <style lang="scss">
+	@import '../../common/css/icons.css';
 	.navbar {
 		.navbar-fixed {
 			position: fixed;
@@ -70,9 +73,9 @@
 					border-radius: 30px;
 					background-color: #fff;
 					.navbar-search_icon {
-						width: 10px;
-						height: 10px;
-						border: 1px red solid;
+						// width: 10px;
+						// height: 10px;
+						// border: 1px red solid;
 						margin-right: 10px;
 					}
 					.navbar-search_text {

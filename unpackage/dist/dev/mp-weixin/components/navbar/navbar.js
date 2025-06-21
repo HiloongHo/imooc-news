@@ -12,10 +12,10 @@ const _sfc_main = {
   created() {
     const info = common_vendor.index.getSystemInfoSync();
     this.statusBarHeight = info.statusBarHeight;
-    common_vendor.index.__f__("log", "at components/navbar/navbar.vue:32", info);
+    common_vendor.index.__f__("log", "at components/navbar/navbar.vue:34", info);
     this.windowWidth = info.windowWidth;
     const menuButtonInfo = common_vendor.index.getMenuButtonBoundingClientRect();
-    common_vendor.index.__f__("log", "at components/navbar/navbar.vue:39", menuButtonInfo);
+    common_vendor.index.__f__("log", "at components/navbar/navbar.vue:41", menuButtonInfo);
     this.navBarHeight = menuButtonInfo.bottom - info.statusBarHeight + (menuButtonInfo.top - info.statusBarHeight);
     this.windowWidth = menuButtonInfo.left;
   }
