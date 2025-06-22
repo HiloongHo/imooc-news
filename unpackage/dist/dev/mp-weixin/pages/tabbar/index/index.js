@@ -1,9 +1,12 @@
 "use strict";
 const common_vendor = require("../../../common/vendor.js");
+const navbar = () => "../../../components/navbar/navbar.js";
+const tab = () => "../../../components/tab/tab.js";
 const _sfc_main = {
-  // components:{
-  // 	navbar
-  // },
+  components: {
+    navbar,
+    tab
+  },
   data() {
     return {
       title: "Hello"
@@ -15,20 +18,16 @@ const _sfc_main = {
 };
 if (!Array) {
   const _easycom_navbar2 = common_vendor.resolveComponent("navbar");
-  _easycom_navbar2();
+  const _easycom_tab2 = common_vendor.resolveComponent("tab");
+  (_easycom_navbar2 + _easycom_tab2)();
 }
 const _easycom_navbar = () => "../../../components/navbar/navbar.js";
+const _easycom_tab = () => "../../../components/tab/tab.js";
 if (!Math) {
-  _easycom_navbar();
+  (_easycom_navbar + _easycom_tab)();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return {
-    a: common_vendor.f(100, (item, k0, i0) => {
-      return {
-        a: common_vendor.t(item)
-      };
-    })
-  };
+  return {};
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);
 wx.createPage(MiniProgramPage);

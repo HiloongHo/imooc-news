@@ -1,1 +1,1 @@
-<view class="content"><navbar u-i="3d2a6d98-0" bind:__l="__l"></navbar><view wx:for="{{a}}" wx:for-item="item">{{item.a}} 内容 </view></view>
+<view class="content"><navbar u-i="3d2a6d98-0" bind:__l="__l"></navbar><tab u-i="3d2a6d98-1" bind:__l="__l"></tab></view>

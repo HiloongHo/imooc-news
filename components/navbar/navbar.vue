@@ -7,7 +7,7 @@
 			<view class="navbar-content" :style="{height: navBarHeight + 'px', width: windowWidth + 'px'}">
 				<view class="navbar-search">
 					<view class="navbar-search_icon">
-						<text class="iconfont icon-search"></text>
+						  <view class="nav-search-icons"><uni-icons type="search" size="16" color="#999"></uni-icons></view>
 					</view>
 					<view class="navbar-search_text">uni-app\ vue</view>
 				</view>

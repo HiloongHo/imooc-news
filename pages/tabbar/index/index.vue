@@ -2,18 +2,18 @@
 	<view class="content">
 		<!-- 自定义导航栏 -->
 		<navbar></navbar>
-		<view v-for="item in 100">
-			{{item}} 内容
-		</view>
+		<tab></tab>
 	</view>
 </template>
 
 <script>
-	// import navbar from '@/components/navbar/navbar.vue'
+	import navbar from '@/components/navbar/navbar.vue'
+	import tab from '@/components/tab/tab.vue'
 	export default {
-		// components:{
-		// 	navbar
-		// },
+		components:{
+			navbar,
+			tab
+		},
 		data() {
 			return {
 				title: 'Hello'
