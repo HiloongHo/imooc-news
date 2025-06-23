@@ -9,12 +9,24 @@ const _sfc_main = {
   },
   data() {
     return {
-      title: "Hello"
+      title: "Hello",
+      tabList: []
     };
   },
   onLoad() {
+    this.getLabel();
   },
-  methods: {}
+  methods: {
+    getLabel() {
+      common_vendor.nr.callFunction({
+        name: "get_label"
+      }).then((res) => {
+        const { result } = res;
+        this.tabList = result.data;
+        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:33", this.tabList);
+      });
+    }
+  }
 };
 if (!Array) {
   const _easycom_navbar2 = common_vendor.resolveComponent("navbar");
@@ -27,7 +39,11 @@ if (!Math) {
   (_easycom_navbar + _easycom_tab)();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return {};
+  return {
+    a: common_vendor.p({
+      list: $data.tabList
+    })
+  };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);
 wx.createPage(MiniProgramPage);

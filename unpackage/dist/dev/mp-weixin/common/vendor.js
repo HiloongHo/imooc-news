@@ -7036,7 +7036,7 @@ function isConsoleWritable() {
 function initRuntimeSocketService() {
   const hosts = "192.168.0.111,127.0.0.1";
   const port = "8090";
-  const id = "mp-weixin_HXChQd";
+  const id = "mp-weixin_7wjx31";
   const lazy = typeof swan !== "undefined";
   let restoreError = lazy ? () => {
   } : initOnError();
@@ -10880,11 +10880,13 @@ let tr = new class {
   } }), Ns(tr), tr.addInterceptor = M, tr.removeInterceptor = q, tr.interceptObject = j, "web" === A)
     ;
 })();
+var nr = tr;
 exports._export_sfc = _export_sfc;
 exports.createSSRApp = createSSRApp;
 exports.f = f$1;
 exports.index = index;
 exports.n = n$1;
+exports.nr = nr;
 exports.o = o$1;
 exports.p = p$1;
 exports.resolveComponent = resolveComponent;
