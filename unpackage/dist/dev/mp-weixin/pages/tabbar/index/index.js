@@ -18,12 +18,14 @@ const _sfc_main = {
   },
   methods: {
     getLabel() {
-      common_vendor.nr.callFunction({
+      common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:28", this.$api);
+      this.$api.get_label({
         name: "get_label"
       }).then((res) => {
-        const { result } = res;
-        this.tabList = result.data;
-        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:33", this.tabList);
+        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:32", res);
+        const { data } = res;
+        this.tabList = data;
+        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:35", this.tabList);
       });
     }
   }

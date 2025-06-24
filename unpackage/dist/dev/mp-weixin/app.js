@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const common_vendor = require("./common/vendor.js");
+const common_api_index = require("./common/api/index.js");
 if (!Math) {
   "./pages/tabbar/index/index.js";
   "./pages/tabbar/follow/follow.js";
@@ -19,6 +20,7 @@ const _sfc_main = {
 };
 function createApp() {
   const app = common_vendor.createSSRApp(_sfc_main);
+  app.config.globalProperties.$api = common_api_index.module;
   return {
     app
   };

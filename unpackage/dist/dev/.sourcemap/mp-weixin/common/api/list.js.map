@@ -1,0 +1,1 @@
+{"version":3,"file":"list.js","sources":["common/api/list.js"],"sourcesContent":["import $http from \"../http\"\r\n\r\nexport const get_label = (data) => {\r\n\treturn $http({\r\n\t\turl:'get_label',\r\n\t\tdata\r\n\t})\r\n}"],"names":["$http"],"mappings":";;AAEO,MAAM,YAAY,CAAC,SAAS;AAClC,SAAOA,kBAAM;AAAA,IACZ,KAAI;AAAA,IACJ;AAAA,EACF,CAAE;AACF;;;;;;"}

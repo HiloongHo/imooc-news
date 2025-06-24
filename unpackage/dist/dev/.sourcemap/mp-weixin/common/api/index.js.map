@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["common/api/index.js"],"sourcesContent":["// Manual imports for mini-program compatibility\nimport * as list from './list.js'\n\n// Combine all API modules\nconst module = {\n  ...list\n}\n\nexport default module"],"names":["module","list"],"mappings":";;AAIK,MAACA,WAAS;AAAA,EACb,GAAGC,gBAAI;AACT;;"}
