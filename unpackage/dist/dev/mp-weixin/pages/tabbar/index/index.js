@@ -17,15 +17,18 @@ const _sfc_main = {
     this.getLabel();
   },
   methods: {
+    tab({ data, index }) {
+      common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:28", data, index);
+    },
     getLabel() {
-      common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:28", this.$api);
+      common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:31", this.$api);
       this.$api.get_label({
         name: "get_label"
       }).then((res) => {
-        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:32", res);
+        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:35", res);
         const { data } = res;
         this.tabList = data;
-        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:35", this.tabList);
+        common_vendor.index.__f__("log", "at pages/tabbar/index/index.vue:38", this.tabList);
       });
     }
   }
@@ -42,7 +45,8 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.p({
+    a: common_vendor.o($options.tab),
+    b: common_vendor.p({
       list: $data.tabList
     })
   };

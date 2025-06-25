@@ -2,7 +2,7 @@
 	<view class="content">
 		<!-- 自定义导航栏 -->
 		<navbar></navbar>
-		<tab :list="tabList"></tab>
+		<tab :list="tabList" @tab="tab"></tab>
 	</view>
 </template>
 
@@ -24,6 +24,9 @@
 			this.getLabel()
 		},
 		methods: {
+			tab({data,index}){
+				console.log(data,index)
+			},
 			getLabel() {
 				console.log(this.$api)
 				this.$api.get_label({

@@ -1,1 +1,1 @@
-<view class="content"><navbar u-i="3d2a6d98-0" bind:__l="__l"></navbar><tab wx:if="{{a}}" u-i="3d2a6d98-1" bind:__l="__l" u-p="{{a}}"></tab></view>
+<view class="content"><navbar u-i="3d2a6d98-0" bind:__l="__l"></navbar><tab wx:if="{{b}}" bindtab="{{a}}" u-i="3d2a6d98-1" bind:__l="__l" u-p="{{b}}"></tab></view>

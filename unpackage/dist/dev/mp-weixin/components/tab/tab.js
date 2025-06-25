@@ -10,7 +10,18 @@ const _sfc_main = {
     }
   },
   data() {
-    return {};
+    return {
+      activeIndex: 0
+    };
+  },
+  methods: {
+    clickTab(item, index) {
+      this.activeIndex = index;
+      this.$emit("tab", {
+        data: item,
+        index
+      });
+    }
   }
 };
 if (!Array) {
@@ -26,7 +37,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     a: common_vendor.f($props.list, (item, index, i0) => {
       return {
         a: common_vendor.t(item.name),
-        b: index
+        b: index,
+        c: $data.activeIndex === index ? 1 : "",
+        d: common_vendor.o(($event) => $options.clickTab(item, index), index)
       };
     }),
     b: common_vendor.p({

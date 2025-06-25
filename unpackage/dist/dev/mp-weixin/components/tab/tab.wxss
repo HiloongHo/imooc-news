@@ -48,6 +48,9 @@
   color: #333;
   font-size: 14px;
 }
+.tab .tab-scroll .tab-scroll_box .tab-scroll_item.active {
+  color: #f07373;
+}
 .tab .tab-icons {
   position: relative;
   display: flex;
